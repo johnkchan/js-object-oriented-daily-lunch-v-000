@@ -105,7 +105,11 @@ class Delivery {
   }
   
   meal() {
-    
+    return store.meals.filter(
+      function(meal) {
+        return meal.mealId === this.id;
+      }.bind(this)
+    );    
   }
   
   customer() {
