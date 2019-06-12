@@ -52,11 +52,7 @@ class Customer {
   }
   
   meals() {
-    return store.meals.filter(
-      function(meal) {
-        return meal.customerId === this.customerId;
-      }.bind(this)
-    );    
+ 
   }
   
   totalSpent() {
