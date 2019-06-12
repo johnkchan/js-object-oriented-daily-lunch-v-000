@@ -104,8 +104,12 @@ class Delivery {
     store.deliveries.push(this);
   }
   
-  meal() {
-
+  meal(deliverId) {
+    return store.meals.filter(
+      function(meal) {
+        return meal.deliveryId === deliverId;
+      }.bind(this)
+    );  
   }
   
   customer() {
