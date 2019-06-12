@@ -12,4 +12,16 @@ class Neighborhood {
     
     store.neighborhoods.push(this);
   }
+  
+  deliveries() {
+    
+  }
+  
+  customers() {
+    
+  }
+  
+  meals() {
+    
+  }
 }
