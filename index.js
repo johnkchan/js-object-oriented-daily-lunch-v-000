@@ -30,7 +30,7 @@ class Neighborhood {
   }
   
   meals() {
-      return store.meals.filter(
+    return store.meals.filter(
       function(meal) {
           return meal.neighborhoodID === this.neighborhoodID;
       }.bind(this)
