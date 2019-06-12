@@ -22,7 +22,11 @@ class Neighborhood {
   }
   
   customers() {
-    
+    return store.customers.filter(
+      function(delivery) {
+        return deliver.id === this.deliverId;
+      }.bind(this)
+    );
   }
   
   meals() {
