@@ -104,11 +104,11 @@ class Delivery {
     store.deliveries.push(this);
   }
   
-  meal(deliverId) {
-        return store.neighborhoods.find(
-            function(neighborhood) {
-                return neighborhood.id === this.neighborhoodId;
-            }.bind(this)
+  meal() {
+    return store.neighborhoods.find(
+        function(neighborhood) {
+            return neighborhood.id === this.neighborhoodId;
+        }.bind(this)
     );  
   }
   
