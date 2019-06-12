@@ -86,7 +86,7 @@ class Meal {
       function(customer) {
         return customer.mealId === this.id;
       }.bind(this)
-    ));           
+    )));           
   }
   
   byPrice() {
