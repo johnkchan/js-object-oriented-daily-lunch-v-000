@@ -105,10 +105,10 @@ class Delivery {
   }
   
   meal(deliverId) {
-    return store.meals.filter(
-      function(meal) {
-        return meal.deliveryId === deliverId;
-      }.bind(this)
+        return store.neighborhoods.find(
+            function(neighborhood) {
+                return neighborhood.id === this.neighborhoodId;
+            }.bind(this)
     );  
   }
   
@@ -117,6 +117,9 @@ class Delivery {
   }
   
   neighborhood() {
-    
+    return store.neighborhoods.find(
+    function(neighborhood) {
+        return neighborhood.id === this.neighborhoodId;
+    }.bind(this)
   }
 }
