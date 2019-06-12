@@ -52,10 +52,10 @@ class Customer {
   }
   
   meals() {
-     return store.meals.filter(
-      function(meal) {
-        return meal.customerId === this.customerId;
-      }.bind(this)
+    return this.deliveries().map (
+        function(delivery) {
+            return delivery.meal()
+        }
     );
   }
   
