@@ -47,3 +47,34 @@ class Customer {
     
   }
 }
+
+class Meal {
+  constructor(title, price) {
+    this.id = ++mealID;
+    this.title = title;
+    this.price = price;
+    
+    store.meals.push(this);
+  }
+  
+  delivers() {
+    
+  }
+  
+  customers() {
+    
+  }
+  
+  byPrice() {
+    
+  }
+}
+
+class Deliver {
+  constructor(meal, neighborhood, customer) {
+    this.id = ++deliveryId;
+    this.mealId = meal.id;
+    this.neighborhoodId = neighborhood.id;
+    this.customerId = customer.id;
+  }
+}
