@@ -65,7 +65,7 @@ class Meal {
     store.meals.push(this);
   }
   
-  delivers() {
+  deliveries() {
     
   }
   
