@@ -82,11 +82,11 @@ class Meal {
   }
   
   customers() {
-    return Array.from(new Set(store.customers.filter(
+    return store.customers.filter(
       function(customer) {
         return customer.mealId === this.id;
       }.bind(this)
-    )));           
+    );           
   }
   
   byPrice() {
