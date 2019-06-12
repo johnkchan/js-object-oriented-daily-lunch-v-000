@@ -77,4 +77,16 @@ class Deliver {
     this.neighborhoodId = neighborhood.id;
     this.customerId = customer.id;
   }
+  
+  meal() {
+    
+  }
+  
+  customer() {
+    
+  }
+  
+  neighborhood() {
+    
+  }
 }
