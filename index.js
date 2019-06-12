@@ -54,7 +54,7 @@ class Customer {
   meals() {
     return store.meals.filter(
       function(meal) {
-        return meal.customerId === this.id;
+        return meal.customerId === this.customerOd;
       }.bind(this)
     );    
   }
