@@ -118,8 +118,9 @@ class Delivery {
   
   neighborhood() {
     return store.neighborhoods.find(
-    function(neighborhood) {
+      function(neighborhood) {
         return neighborhood.id === this.neighborhoodId;
-    }.bind(this)
+      }.bind(this)
+    );
   }
 }
